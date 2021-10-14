@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+  </head>
+  <body>
+    <div class="home">
+      <div class="home-wrapper">
+        <img src="./assets/logo.svg" alt="logo" class="home-img"
+        data-0="opacity: 1; right: 0px;"
+        data-550="right: 700px; opacity: 0"
+        >
+      </div>
+    </div>
+    <div class="pen">
+      <div class="pen-wrapper" data-500="left: -100vw;" data-950="left: 6vw;">
+        <img src="./assets/pen-left.png" alt="pen-part" class="pen-left"
+        data-950="transform: translateX(0%)"
+        data-1300="transform: translateX(-150%)"
+        data-2900="transform: translateX(-150%)"
+        data-3600="transform: translateX(0%)"
+        >
+        <img src="./assets/pen-right.png" alt="pen-part" class="pen-right"
+        data-950="transform: translateX(0%)"
+        data-1300="transform: translateX(115%)"
+        data-2900="transform: translateX(115%)"
+        data-3600="transform: translateX(0%)"
+        >
+      </div>
+    </div>
+    <div class="page-wrapper">
+      <div class="intro" data-aos="zoom-in" data-aos-duration="1000">
+        <div id="wrap-image">
+          <img src="./assets/monitor.png" alt="monitor">
+        </div>
+        <div id="wrap-text">
+          <h6 class="category-heading">Web designer</h6>
+          <h1 id="heading">Чем занимается веб-дизайнер на самом деле</h1>
+          <p class="paragraph">
+            Дизайн - это про баланс красоты, логики и возможностей. Веб-дизайнер
+            должен сделать проект красивым, но это только одна из его задач. В первую
+            очередь он проектировщик и аналитик, который создает простые и понятные продукты на основе анализа 
+            поведения пользователей.
+          </p>
+        </div>
+      </div>
+      <div id="block">
+        <div class="block-wrapper">
+          <div id="parallax">
+            <div class="circle c1 cline"></div>
+            <div class="circle c2 cline"></div>
+            <div id="color" style="opacity: 0;" class="circle c3 color"></div>
+            <div class="circle c4 cline"></div>
+            <div class="circle c5 cline"></div>
+            <div class="circle c6 cline"></div>
+          </div>
+          <div id="text">
+            <h6 class="heading">Recap Labs</h6>
+            <h1 class="heading-2">
+              <span class="text-highlight">Colorscope</span>
+            </h1>
+            <p class="paragraph">
+              An experiment built using div blocks, interactions animation. Move
+              your cursor around the page to change the course of effects
+            </p>
+          </div>
+          <div class="wrap-btn">
+            <a href="#" class="button" id="btn">Launch toy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/skrollr.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      AOS.init();
+      let s = skrollr.init();
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        alert("Не поддерживается на мобильных устройствах.");
+      }
+    </script>
+  </body>
+</html>
